@@ -4,15 +4,19 @@ import SplashLight from "./components/SplashLight";
 
 export const router = createBrowserRouter([
   {
-    path: "/dark",
+    path: "/Sclsplashscreen/dark",
     Component: SplashDark,
   },
   {
-    path: "/light",
+    path: "/Sclsplashscreen/light", 
     Component: SplashLight,
   },
   {
-    path: "/",
+    path: "/Sclsplashscreen/",
     Component: SplashDark, // ডিফল্ট হিসেবে ডার্ক মোড
+  },
+  {
+    path: "*",
+    Component: SplashDark, // 404 fallback
   },
 ]);
